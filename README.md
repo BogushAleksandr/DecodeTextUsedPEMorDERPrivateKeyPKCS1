@@ -1,0 +1,1 @@
+# DecodeTextUsedPEMorDERPrivateKeyPKCS1
