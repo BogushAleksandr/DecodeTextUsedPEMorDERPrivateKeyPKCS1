@@ -18,8 +18,11 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPrivateCrtKeySpec;
 
 /**
- * @author Sasha
+ * @author Bogush Aleksandr
+ * @version 1.0
+ * @since 15-11-2020
  */
+
 public class RsaKey {
     public static String userText;
 

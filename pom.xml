@@ -1,22 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.ua.innova</groupId>
-  <artifactId>DecodePEMorDERPrivateKeyPKCS1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>DecodePEMorDERPrivateKeyPKCS1</name>
-  
-   <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ua.innova</groupId>
+    <artifactId>DecodePEMorDERPrivateKeyPKCS1</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>DecodePEMorDERPrivateKeyPKCS1</name>
+
+    <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <downloadSources>true</downloadSources>
+        <downloadJavadocs>true</downloadJavadocs>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <commons-codec>1.15</commons-codec>
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.14</version>
-        </dependency>       
+            <version>${commons-codec}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -24,12 +31,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
+
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -37,17 +46,5 @@
             </resource>
         </resources>
     </build>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
 </project>

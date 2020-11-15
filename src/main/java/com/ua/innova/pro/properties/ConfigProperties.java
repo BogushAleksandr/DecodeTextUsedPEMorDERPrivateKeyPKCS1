@@ -7,9 +7,13 @@ import java.util.Properties;
 
 
 /**
- * @author Sasha
+ * @author Bogush Aleksandr
+ * @version 1.0
+ * @since 15-11-2020
  */
+
 public class ConfigProperties {
+
     String result = "";
     InputStream inputStream;
 
